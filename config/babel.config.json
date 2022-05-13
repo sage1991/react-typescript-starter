@@ -1,0 +1,27 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": "> 0.25%, last 2 versions, not dead",
+        "modules": "auto"
+      }
+    ],
+    [
+      "@babel/preset-typescript",
+      {
+        "optimizeConstEnums": true
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": 3,
+        "version": "^7.17.2"
+      }
+    ]
+  ]
+}
